@@ -1,0 +1,14 @@
+DEAD AIR 0.5 – ONLINE SERVER
+
+Server je připravený, ale zatím není nasazený: neexistuje veřejná adresa.
+1. Nahraj obsah této složky do vlastního Git repozitáře.
+2. Na Render.com vytvoř Web Service z repozitáře.
+3. Runtime Node, Build: npm install --omit=dev --ignore-scripts; Start: node server.cjs.
+4. Ponech jedinou instanci. Roomky jsou v paměti; restart je ukončí.
+5. Ve hře všichni vloží přidělenou https://...onrender.com adresu. Klient ji převede na wss://. Host vytvoří roomku a pošle kód ostatním.
+
+Hra i hlas běží přes tentýž WebSocket, hráči nemusí otevírat porty na routeru. Hosting a jeho cenu vybírá vlastník účtu.
+Vývojářské menu je stále přístupné komukoli se jménem Pospa1Test: jde o testovací přezdívku, ne ověřený účet.
+Limit serveru: 100 připojení, 10 hráčů v roomce. Po výpadku připojení je třeba připojit se znovu.
+
+Dokumentace: https://render.com/docs/websocket a https://render.com/docs/web-services

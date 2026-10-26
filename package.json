@@ -1,0 +1,14 @@
+{
+  "name": "dead-air-online-server",
+  "version": "0.5.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "ws": "8.18.3"
+  }
+}
